@@ -226,3 +226,99 @@ el sistema.
 - Un alto valor eferente indica que el componente depende de muchos otros, lo que puede hacerlo más susceptible a cambios en esos  componentes.
 
 ![alt text](image-38.png)
+
+
+Ejercicio de conteo aferente y eferente 
+![alt text](image-39.png)
+![alt text](image-40.png)
+
+### Metrica: Carcater abstracto 
+![alt text](image-41.png)
+
+### Metrica: inestabilidad
+![alt text](image-42.png)
+
+### Metrica: Distancia de la secuencia principal
+![alt text](image-43.png)
+
+Distancia de la secuencia principal
+![alt text](image-44.png)
+
+### Interpretacion grafica de la distancia
+
+![alt text](image-45.png)
+
+![alt text](image-46.png)
+
+Ejemplo:
+![alt text](image-47.png)
+
+![alt text](image-48.png)
+
+## Connascense
+Esta es una metrica de calidad, introducida por Meilir Page-Jones, que mide el grado de dependencia entre dos o mas componentes de software. Indica que si un componente cambia, los otros deben modificarse para que el sistema siga funcionando, clasificandose por su fuerza, tipo y proximidad
+
+**Dos módulos tienen connascencia si un cambio en uno obliga a cambiar el otro (nacen o se modifican juntos)**
+
+Dos componentes son co-nacidos (connacense) si un cambio en uno requerirá la modificación del otro para mantener la correctitud general del sistema 
+
+Clasificacion de la connascencia
+Connascencia Estatica (Analizable en codigo): 
+- Nombre (CoN): Cambio de nombre de una entidad (ej. método, variable).
+- Tipo (CoT): Cambio en el tipo de datos (ej. cambiar de int a float).
+- Posición (CoP): Dependencia del orden de parámetros.
+- Algoritmo (CoA): Varios módulos deben usar el mismo algoritmo
+
+
+Connascencia Dinamica (Detectable en tiempo de ejecucion)
+- Ejecución (CoE): Dependencia en el orden de ejecución.
+- Tiempo (CoT): Dependencia de la temporización (ej. tiempo de espera).
+- Valores (CoV): Varios elementos deben coincidir en un valor específico.
+- Identidad (CoI): Varios componentes dependen de la misma identidad de objeto
+
+Niveles de connascene
+![alt text](image-49.png)
+
+Dimensiones de connascense
+![alt text](image-50.png)
+
+![alt text](image-51.png)
+
+![alt text](image-52.png)
+
+![alt text](image-53.png)
+
+Tipos de connascense
+![alt text](image-54.png)
+
+### Connascense of name (CoN)
+![alt text](image-55.png)
+
+![alt text](image-56.png)
+
+Tipo de arquitectura
+![alt text](image-57.png)
+
+### Connascense of type (CoT)
+![alt text](image-58.png)
+
+### Connascense of meaning / convention (CoM, CoC)
+![alt text](image-59.png)
+
+### Connascense of Algorithm (CoA)
+![alt text](image-60.png)
+
+### Connascense of position (CoP)
+![alt text](image-61.png)
+
+### Connascense of execution (CoE)
+![alt text](image-62.png)
+
+### Connascense of timing (CoT)
+![alt text](image-63.png)
+
+### Connascense of value (CoV)
+![alt text](image-64.png)
+
+### Connascense of identity (Col)
+![alt text](image-65.png)
